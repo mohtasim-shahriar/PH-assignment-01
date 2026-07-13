@@ -215,3 +215,80 @@ h1, h2, h3 {
 .speaker-info h3 { font-size: 1.25rem; margin-bottom: 0.25rem; }
 .speaker-info p { color: var(--gray-600); font-size: 0.95rem; }
 
+/* --------------------------------- PRICING ---------------------------------- */
+
+.pricing { background: var(--gray-100); padding: 6rem 2rem 7rem; }
+
+.pricing .section-heading { margin-bottom: 0.6rem; }
+
+.pricing-grid {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.price-card {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 2rem 1.9rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--gray-300);
+}
+
+.price-card-featured {
+  background: var(--navy);
+  color: var(--white);
+  border: none;
+  box-shadow: 0 20px 45px rgba(11,18,32,0.35);
+}
+
+.price-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gray-600);
+}
+.price-card-featured .price-label { color: rgba(255,255,255,0.6); }
+.price-card-featured .price-amount small { color: rgba(255,255,255,0.55); }
+
+.price-amount {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1.4rem;
+}
+.price-amount small {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--gray-600);
+  margin-top: 0.2rem;
+}
+
+.price-card .hr { border: none; border-top: 1px solid var(--gray-300); margin-bottom: 1.4rem; }
+.price-card-featured .hr { border-top-color: rgba(255,255,255,0.15); }
+
+.price-features { margin-bottom: 1.8rem; }
+.price-features li {
+  position: relative;
+  padding-left: 1.3rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.93rem;
+  color: var(--gray-600);
+}
+.price-card-featured .price-features li { color: rgba(255,255,255,0.8); }
+
+.price-features li::before {
+  content: "•";
+  position: absolute;
+  left: 0.15rem;
+  color: var(--blue);
+}
+.price-card-featured .price-features li::before { color: var(--terminal-green); }
+
+.price-card .btn-primary { text-align: center; width: 100%; }
+
